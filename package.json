@@ -1,6 +1,6 @@
 {
   "name": "tushy-vite-plugin-v2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vite plugin for our tushy shopify theme",
   "repository": {
     "url": "https://github.com/allanhal/tushy-vite-plugin-v2.git"
@@ -35,7 +35,7 @@
     "prepare": "install-peers"
   },
   "peerDependencies": {
-    "vite": "^4.0.4"
+    "vite": "^4.2.1"
   },
   "dependencies": {
     "debug": "^4.3.4",
