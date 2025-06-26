@@ -1,4 +1,4 @@
-# tushy-vite-plugin
+# tushy-vite-plugin-v2
 
 ## 2.1.1
 
@@ -29,7 +29,7 @@
 
 ### Major Changes
 
-We have deprecated the `tushy-vite-plugin-modules` and `tushy-vite-plugin-theme-settings` packages from our NPM repository.
+We have deprecated the `tushy-vite-plugin-v2-modules` and `tushy-vite-plugin-v2-theme-settings` packages from our NPM repository.
 These packages are no longer necessary and do not provide any additional benefit, and their presence can cause additional complexity
 and confusion.
 
@@ -38,7 +38,7 @@ and confusion.
 - Clean up config hook ([#59](https://github.com/barrel/shopify-vite/pull/59)) by [@montalvomiguelo](https://github.com/montalvomiguelo)
 
 > **Note**
-> After removing "tushy-vite-plugin-modules" from your theme, you could manually configure the `@modules` alias in Vite to maintain
+> After removing "tushy-vite-plugin-v2-modules" from your theme, you could manually configure the `@modules` alias in Vite to maintain
 > compatibility with this alias in your code.
 
 ## 1.0.2
@@ -114,7 +114,7 @@ and confusion.
 
 ### Patch Changes
 
-- feef172: Add "additionalEntrypoints" option and support for shorthand imports from tushy-vite-plugin-modules
+- feef172: Add "additionalEntrypoints" option and support for shorthand imports from tushy-vite-plugin-v2-modules
 
 ## 0.0.4
 

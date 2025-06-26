@@ -1,10 +1,11 @@
-import { describe, expect, it } from 'vitest'
-import path from 'node:path'
-import { build, normalizePath } from 'vite'
-import shopify from '../src'
-import fs from 'node:fs/promises'
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { build, normalizePath } from 'vite';
+import { describe, expect, it } from 'vitest';
 
-describe('tushy-vite-plugin', () => {
+import shopify from '../src';
+
+describe('tushy-vite-plugin-v2', () => {
   it('builds out .liquid files for production', async () => {
     await build({
       logLevel: 'silent',

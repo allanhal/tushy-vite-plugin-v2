@@ -1,9 +1,10 @@
-import { afterEach, describe, expect, it, vi } from 'vitest'
-import { resolveOptions } from '../src/options'
-import plugin from '../src/config'
-import path from 'node:path'
+import path from 'node:path';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-describe('tushy-vite-plugin:config', () => {
+import plugin from '../src/config';
+import { resolveOptions } from '../src/options';
+
+describe('tushy-vite-plugin-v2:config', () => {
   afterEach(() => {
     vi.clearAllMocks()
   })

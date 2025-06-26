@@ -1,11 +1,11 @@
-import { Plugin } from 'vite'
+import { Plugin } from 'vite';
 
 export default function shopifyReactRefresh(): Plugin {
-  const virtualModuleId = 'tushy-vite-plugin:react-refresh'
+  const virtualModuleId = 'tushy-vite-plugin-v2:react-refresh'
   const resolvedVirtualModuleId = '\0' + virtualModuleId
 
   return {
-    name: 'tushy-vite-plugin:react-refresh',
+    name: 'tushy-vite-plugin-v2:react-refresh',
     resolveId(id) {
       if (id === virtualModuleId) {
         return resolvedVirtualModuleId

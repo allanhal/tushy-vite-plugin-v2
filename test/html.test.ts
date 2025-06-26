@@ -1,11 +1,12 @@
-import { describe, it, expect } from 'vitest'
-import path from 'node:path'
-import fs from 'fs/promises'
-import html from '../src/html'
-import { resolveOptions } from '../src/options'
-import { createServer, Plugin } from 'vite'
+import fs from 'fs/promises';
+import path from 'node:path';
+import { createServer, Plugin } from 'vite';
+import { describe, expect, it } from 'vitest';
 
-describe('tushy-vite-plugin:html', () => {
+import html from '../src/html';
+import { resolveOptions } from '../src/options';
+
+describe('tushy-vite-plugin-v2:html', () => {
   it('builds out .liquid files for development', async () => {
     const options = resolveOptions({
       themeRoot: 'test/__fixtures__',

@@ -1,16 +1,16 @@
-import path from 'node:path'
-import { Plugin, UserConfig, normalizePath } from 'vite'
-import glob from 'fast-glob'
-import createDebugger from 'debug'
+import createDebugger from 'debug';
+import glob from 'fast-glob';
+import path from 'node:path';
+import { normalizePath, Plugin, UserConfig } from 'vite';
 
 import type { Options } from './types'
 
-const debug = createDebugger('tushy-vite-plugin:config')
+const debug = createDebugger('tushy-vite-plugin-v2:config')
 
 // Plugin for setting necessary Vite config to support Shopify plugin functionality
 export default function shopifyConfig(options: Required<Options>): Plugin {
   return {
-    name: 'tushy-vite-plugin-config',
+    name: 'tushy-vite-plugin-v2-config',
     config(config: UserConfig): UserConfig {
       const host = config.server?.host ?? 'localhost'
       const port = config.server?.port ?? 5173

@@ -1,9 +1,9 @@
 {
-  "name": "tushy-vite-plugin",
+  "name": "tushy-vite-plugin-v2",
   "version": "1.0.0",
   "description": "Vite plugin for our tushy shopify theme",
   "repository": {
-    "url": "https://github.com/sh-sabbir/tushy-vite-plugin.git"
+    "url": "https://github.com/allanhal/tushy-vite-plugin-v2.git"
   },
   "keywords": [
     "vite",

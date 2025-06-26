@@ -1,6 +1,6 @@
-# tushy-vite-plugin
+# tushy-vite-plugin-v2
 
-`tushy-vite-plugin` aims to integrate Vite as seamlessly as possible with Shopify themes to optimize your theme development experience.
+`tushy-vite-plugin-v2` aims to integrate Vite as seamlessly as possible with Shopify themes to optimize your theme development experience.
 
 ## Features
 
@@ -14,21 +14,21 @@
 ## Install
 
 ```bash
-npm i tushy-vite-plugin -D
+npm i tushy-vite-plugin-v2 -D
 
 # yarn
-yarn add tushy-vite-plugin -D
+yarn add tushy-vite-plugin-v2 -D
 
 # pnpm
-pnpm add tushy-vite-plugin -D
+pnpm add tushy-vite-plugin-v2 -D
 ```
 
 ## Usage
 
-Add the `tushy-vite-plugin` to your `vite.config.js` file and configure it:
+Add the `tushy-vite-plugin-v2` to your `vite.config.js` file and configure it:
 
 ```js
-import shopify from 'tushy-vite-plugin'
+import shopify from 'tushy-vite-plugin-v2'
 
 export default {
   plugins: [
@@ -116,7 +116,7 @@ import '@/styles/my_styles.css'
 
 ## Example
 
-See the [vite-shopify-example](https://github.com/barrel/barrel-shopify/tree/main/examples/vite-shopify-example) theme for a basic demonstration of `tushy-vite-plugin` usage.
+See the [vite-shopify-example](https://github.com/barrel/barrel-shopify/tree/main/examples/vite-shopify-example) theme for a basic demonstration of `tushy-vite-plugin-v2` usage.
 
 ## Bugs
 
