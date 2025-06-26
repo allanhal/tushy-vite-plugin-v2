@@ -1,11 +1,12 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import { AddressInfo } from 'node:net'
-import { fileURLToPath } from 'node:url'
-import { Manifest, Plugin, ResolvedConfig, normalizePath } from 'vite'
-import createDebugger from 'debug'
+import createDebugger from 'debug';
+import fs from 'node:fs';
+import { AddressInfo } from 'node:net';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { Manifest, normalizePath, Plugin, ResolvedConfig } from 'vite';
 
-import { CSS_EXTENSIONS_REGEX, KNOWN_CSS_EXTENSIONS } from './constants'
+import { CSS_EXTENSIONS_REGEX, KNOWN_CSS_EXTENSIONS } from './constants';
+
 import type { Options, DevServerUrl } from './types'
 
 const debug = createDebugger('tushy-vite-plugin:html')
@@ -172,7 +173,7 @@ const preloadScriptTag = (fileName: string): string =>
 
 // Generate a production script tag for a script asset
 const scriptTag = (fileName: string): string =>
-  `<script src="{{ '${fileName}' | asset_url }}" type="module" crossorigin="anonymous"></script>`
+  `<script src="{{ '${fileName}' | asset_url }}" type="module" crossorigin="anonymous" async defer></script>`
 
 // Generate a production stylesheet link tag for a style asset
 const stylesheetTag = (fileName: string): string =>
