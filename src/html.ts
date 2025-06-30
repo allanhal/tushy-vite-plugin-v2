@@ -173,7 +173,7 @@ const preloadScriptTag = (fileName: string): string =>
 
 // Generate a production script tag for a script asset
 const scriptTag = (fileName: string): string =>
-  `<script src="{{ '${fileName}' | asset_url }}" type="module" crossorigin="anonymous" defer></script>`
+  `<script defer src="{{ '${fileName}' | asset_url }}" type="module" crossorigin="anonymous"></script>`
 
 // Generate a production stylesheet link tag for a style asset
 const stylesheetTag = (fileName: string): string =>
@@ -201,12 +201,12 @@ const viteTagSnippetDev = (assetHost: string, entrypointsDir: string, reactPlugi
 %}${reactPlugin === undefined
     ? ''
     : `
-<script src="${assetHost}/@id/__x00__tushy-vite-plugin-v2:react-refresh" type="module" defer></script>`}
-<script src="${assetHost}/@vite/client" type="module" defer></script>
+<script defer src="${assetHost}/@id/__x00__tushy-vite-plugin-v2:react-refresh" type="module"></script>`}
+<script defer src="${assetHost}/@vite/client" type="module"></script>
 {% if is_css == true %}
   {{ file_url | stylesheet_tag }}
 {% else %}
-  <script src="{{ file_url }}" type="module" defer></script>
+  <script defer src="{{ file_url }}" type="module"></script>
 {% endif %}
 `
 
